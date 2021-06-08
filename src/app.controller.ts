@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('api/v1/aws/health')
+  getHealth(): string {
+    return 'ok';
+  }
 }
